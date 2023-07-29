@@ -1,0 +1,16 @@
+img{
+    position: absolute;
+}
+ .btn btn-success{
+    /* background-color: rgb(88, 228, 88);
+    position: relative;
+    border-radius: 5px;
+    color: white; */
+   position: absolute;
+    top: 63px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: #fff;
+    font-style: italic;
+    /* max-width: 20px; */
+ }

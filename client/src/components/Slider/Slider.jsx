@@ -1,42 +1,48 @@
-import React from 'react'
-// import OwlCarousel from 'react-owl-carousel';  
-// import 'owl.carousel/dist/assets/owl.carousel.css';  
-// import 'owl.carousel/dist/assets/owl.theme.default.css';  
-import './slider.css'
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-flip';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import './styles.css';
+
+// import required modules
+import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
 
 export default function Slider() {
   return (
     <>
-<img className="img" src={'assets/IMG12.jpg'} height={"90%"} width={"90%"}/>
-    {/* <OwlCarousel items={1}  
-              className="owl-theme"  
-              loop  
-              nav  
-              margin={2}
-              autoplay
-      autoplayTimeout={3000}> 
-    <div>
-    <div className="image-wrapper">
-          <img className="img" src={'assets/img1.avif'}/>
-          
-          <div className="text-overlay">
-          <h1 style={{color:"white"}}>ORGANIC store <br/> Hotel</h1>
-          <p style={{color:"white"}}>
-                 We Serve Fresh Vegetables and Fruits  </p>
-                <a href="#" class="primary-btn">Discover Now</a>
-          </div>
-        </div>
-      </div>
-      <div className="image-wrapper"> 
-      <div><img  className="img" src= {'assets/img/room/ROOM-8.jpg'}/></div> 
-      </div> 
-      <div className="image-wrapper"> 
-      <div><img  className="img" src= {'assets/img/room/room-9.jpg'} />
-      </div>
-      </div> 
-    
-     
-             </OwlCarousel>   */}
-        </>
+    <Swiper
+        effect={'flip'}
+        grabCursor={true}
+        pagination={true}
+        navigation={true}
+        modules={[EffectFlip, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={'IMG3.avif'} style={{width:"100%", height:"600px"}} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={'assets/BG.jpg'} style={{width:"100%" , height:"600px"}} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={'assets/BG11.jpg'} style={{width:"100%"}} />
+        </SwiperSlide>
+        {/* <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide> */}
+      </Swiper>
+    </>
   )
 }

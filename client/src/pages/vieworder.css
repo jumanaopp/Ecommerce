@@ -1,0 +1,17 @@
+p{
+    /* font-size: large; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    /* color: rgb(24, 131, 24); */
+}
+h5{
+    
+        /* font-size: large; */
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        /* color: rgb(24, 131, 24); */
+    
+}
+.form-container{
+    width: 600px;
+}

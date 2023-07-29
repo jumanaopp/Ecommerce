@@ -1,8 +1,8 @@
 
 
-.image-wrapper{
+/* .image-wrapper{
     position: relative;
-  /* text-align: center; */
+  text-align: center;
 }
 .text-overlay{
     position: absolute;
@@ -15,4 +15,80 @@
     .text-overlay:hover{
         transition: all 0.3s ease-out;
         transform: translateY(-25px);
+    } */
+
+    .btn{
+        display: inline-block;
+        background: #ff523b;
+        color: white;
+        padding: 8PX 30px;
+        margin: 30PX 0;
+        border-radius: 30px;
+    
     }
+    
+    .btn:hover{
+    
+        background: #d02626;
+    }
+    
+    
+    .btn1{
+        display: inline-block;
+        background: #ff523b;
+        color: rgb(10, 10, 10);
+        padding: 8PX 30px;
+        margin: 30PX 0;
+        border-radius: 30px;
+    
+    }
+    
+    .btn1:hover{
+    
+        background: #f9f5f5;
+    }
+    
+    .first-txt {
+        
+        font-size: 20px;
+          position: absolute;
+          top: 40px;
+          left: 150px;
+          color: black;
+          font-style: italic;
+      }
+    
+      .second-txt {
+        
+        font-size: 50px;
+          position: absolute;
+          top: 125px;
+          left: 175px;
+          color: white;
+    
+      }
+    
+    
+      .third-txt{
+        font-size: 15px;
+          position: absolute;
+          top: 325px;
+          left: 175px;
+          color: white;
+      }
+         
+          
+          body {
+            font-family: Arial;
+            font-size: 17px;
+          }
+          
+          .containerneww {
+            position: relative;
+            width: 1200px;
+            height: 1200px;
+            margin: 0 auto;
+          }
+          
+          
+          
